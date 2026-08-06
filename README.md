@@ -2,6 +2,10 @@
 
 Personal optimization journal for **Whisperflyte**, a level 93 Deadeye in the Runes of Aldur league.
 
+## Character links
+
+- [Whisperflyte on poe.ninja](https://poe.ninja/poe2/profile/BatseBayan-2892/runesofaldur/character/Whisperflyte)
+
 ## Current snapshot
 
 | Metric | Current | Near-term target |
@@ -40,6 +44,22 @@ Current balance is **unverified**. Update this before setting hard purchase ceil
 - [TradeSearches.md](TradeSearches.md) — reusable trade filters
 - [SessionLog.md](SessionLog.md) — chronological progress
 - [UpgradeHistory.md](UpgradeHistory.md) — completed changes and measured results
+- [WORKFLOW.md](WORKFLOW.md) — how to refresh the tracked build data
+
+## Updating the tracked build data
+
+The repository is the source of truth for our optimization work. After a meaningful character change:
+
+1. Let poe.ninja refresh the public character page; use it as a convenient live reference, not as the authoritative historical record.
+2. Export the current character from Path of Building 2 and save the export under `Exports/` with a dated filename such as `Whisperflyte-L93-2026-08-06.txt`.
+3. Update `CURRENT_STATUS.md` with the new level, Life, Energy Shield, evasion, DPS, attributes, resistances, Spirit and equipped-item changes.
+4. Update `Attributes.md` and `Constraints.md` if requirements, safety margins or resistance dependencies changed.
+5. Record completed purchases and before/after deltas in `UpgradeHistory.md` and the dated session summary in `SessionLog.md`.
+6. Remove completed priorities from `Shopping.md`, add the next upgrade targets, and update `TradeSearches.md` when the required filters change.
+7. Update currency only from a confirmed in-game balance; mark live trade prices and other transient values with the date checked.
+8. Commit the refresh in a review branch and merge only after the numbers and gear changes have been verified.
+
+See [WORKFLOW.md](WORKFLOW.md) for the detailed update procedure.
 
 ## Operating rule
 
