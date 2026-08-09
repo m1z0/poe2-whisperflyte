@@ -1,207 +1,139 @@
 # Whisperflyte — Current Build Status
 
-Last updated: 2026-08-06
+Last updated: 2026-08-08
 
 ## Character snapshot
 
 - Character: **Whisperflyte**
-- Level: **93**
+- Level: **94**
 - Class: **Ranger**
 - Ascendancy: **Deadeye**
 - League: **Runes of Aldur**
 - Profile: `BatseBayan-2892`
+- Latest PoB: `Exports/Whisperflyte-L94-2026-08-08.txt`
 
 | Stat | Current | Requirement / target | Margin / note |
 |---|---:|---:|---|
-| Strength | 78 | 45 required | +33 |
-| Dexterity | 171 | 163 required | +8 |
-| Intelligence | 117 | 115 required | +2 |
-| Life | 1,674 | 1,850–2,000 target | Low |
-| Energy Shield | 1,129 | Maintain 1,100+ | Moderate |
-| Evasion | 17,427 | Maintain 17,000+ | ~69% evade |
-| Fire Resistance | 74% | 75% minimum | 1 point below cap |
-| Cold Resistance | 75% | 75% minimum | Small overcap |
-| Lightning Resistance | 75% | 75% minimum | Small overcap |
-| Chaos Resistance | 17% | 35–50% target | Low |
-| Combined PoB DPS | ~41,220 | Baseline | Improve after defenses |
+| Strength | 58 | 45 required | +13 |
+| Dexterity | 191 | 163 required | +28 |
+| Intelligence | 117 | 115 required | **+2** |
+| Life | 1,768 | 1,850–2,000 target | Improved, still below target |
+| Energy Shield | 1,129 | Maintain 1,100+ | On target |
+| Evasion | 17,427 | Maintain 17,000+ | On target |
+| Fire Resistance | 75% | 75% minimum | +6 overcap |
+| Cold Resistance | 75% | 75% minimum | +15 overcap |
+| Lightning Resistance | 75% | 75% minimum | +12 overcap |
+| Chaos Resistance | 21% | 35–50% target | Still low |
+| Spirit | 148 | Preserve current setup | 33 unreserved |
+| Combined PoB DPS | ~39,220 | Baseline | Re-evaluate per candidate |
 
-## Build constraints
+## Changes since 2026-08-06 baseline
+
+| Metric | Previous | Current | Net change |
+|---|---:|---:|---:|
+| Level | 93 | 94 | +1 |
+| Life | 1,674 | 1,768 | +94 |
+| Energy Shield | 1,129 | 1,129 | 0 |
+| Evasion | 17,427 | 17,427 | 0 |
+| Strength | 78 | 58 | -20 |
+| Dexterity | 171 | 191 | +20 |
+| Intelligence | 117 | 117 | 0 |
+| Fire overcap | below cap | +6 | Improved |
+| Cold overcap | +8 | +15 | +7 |
+| Lightning overcap | +5 | +12 | +7 |
+| Chaos Resistance | 17% | 21% | +4 |
+| Combined PoB DPS | ~41,220 | ~39,220 | ~-2,000 |
+
+The export proves the net stat changes above. It does **not** by itself prove which exact passive nodes caused the Strength/Dexterity shift, so the database does not infer that detail.
+
+## Current gear audit
+
+| Slot | Current item | Status |
+|---|---|---|
+| Bow | Phoenix Thirst | Hold until later |
+| Quiver | Cadiro's Gambit | Build-defining; hold |
+| Helmet | Grim Corona | Attribute/resistance anchor |
+| Body Armour | Storm Coat | Strong; hold |
+| Gloves | Brood Nails | Medium-priority future upgrade |
+| Boots | Storm Goad | Attribute anchor; later |
+| Belt | Torment Buckle | Strong defensive upgrade candidate |
+| Amulet | Carrion Gorget | **Current high-impact target** |
+| Ring 1 | Golem Knot | **Upgrade completed** |
+| Ring 2 | Dusk Spiral | Medium-priority future upgrade |
+
+## Golem Knot — current Ring 1
+
+**Prismatic Ring, item level 82**
+
+- +7% to all Elemental Resistances
+- Adds 11–19 Physical Damage to Attacks
+- Adds 21–32 Cold Damage to Attacks
+- +118 maximum Life
+- +21% Chaos Resistance
+- 13.4 Life Regeneration per second
+- Leech 6.16% of Physical Attack Damage as Mana
+
+This replaced `Bramble Loop`. Purchase price is not recorded yet.
+
+## Current constraints
 
 Every proposed upgrade must preserve:
 
-- All current item and gem requirements
-- Capped fire, cold and lightning resistance
-- Enough Spirit for persistent skills
+- all current item and gem requirements
+- capped fire, cold and lightning resistance
+- enough Spirit for the persistent-skill setup
 - 35% movement speed when replacing boots unless the total upgrade is exceptional
-- The current bow and Cadiro's Gambit mechanics unless PoB proves a replacement is superior
-- Approximately 17,000+ evasion and 1,100+ Energy Shield
+- the current bow and Cadiro's Gambit mechanics unless PoB proves a replacement is superior
+- approximately 17,000+ evasion and 1,100+ Energy Shield
 
-Preferred attribute safety margins after each change:
+Preferred attribute safety margins:
 
 - Strength: at least +10 over requirement
 - Dexterity: at least +10 over requirement
 - Intelligence: at least +10 to +15 over requirement
 
-## Attribute dependencies
+**Current concern:** Intelligence remains only +2 above requirement, so an amulet replacement must either retain enough Intelligence or be paired with a verified passive/gear adjustment.
 
-Approximate item-supplied attributes:
-
-| Slot | Strength | Dexterity | Intelligence |
-|---|---:|---:|---:|
-| Bow | — | +28 | — |
-| Boots | — | +23 | +33 |
-| Helmet | — | — | +32 |
-| Amulet | — | — | +14 |
-| Dusk Spiral | — | — | +11 |
-| Belt | +31 | — | — |
-
-Key conclusions:
-
-- The bow and boots are Dexterity anchors.
-- Boots are the hardest slot to replace because they provide both Dexterity and Intelligence.
-- Intelligence is currently spread across boots, helmet, amulet and Dusk Spiral.
-- Strength has excess capacity, but reducing it also reduces maximum Life.
-
-## Passive-tree option
-
-Reassigning flexible Strength travel nodes to Intelligence has the following approximate cost:
-
-| Nodes changed | Strength lost | Intelligence gained | Approximate Life lost |
-|---:|---:|---:|---:|
-| 1 | 5 | 5 | 10 |
-| 2 | 10 | 10 | 20 |
-| 3 | 15 | 15 | 30 |
-| 4 | 20 | 20 | 40 |
-| 6 | 30 | 30 | 60 |
-
-Preferred approach:
-
-1. Find the replacement for Bramble Loop first.
-2. Import the candidate into PoB.
-3. Check whether the ring adds Intelligence.
-4. Reassign only the number of Strength nodes actually needed.
-5. Do not reduce Strength to the exact requirement.
-
-A four-node reassignment is the maximum preferred initial plan:
-
-- Strength: approximately 58
-- Dexterity: 171
-- Intelligence: approximately 137
-- Life: approximately 1,634
-
-## Gear audit
-
-| Slot | Current item | Grade | Action |
-|---|---|---:|---|
-| Bow | Phoenix Thirst | B+ | Hold until later |
-| Quiver | Cadiro's Gambit | A / build-defining | Hold |
-| Helmet | Grim Corona | B | Later |
-| Body Armour | Storm Coat | A- | Hold |
-| Gloves | Brood Nails | C+ | Medium priority |
-| Boots | Storm Goad | C structurally / attribute anchor | Later |
-| Belt | Torment Buckle | B- | High priority |
-| Amulet | Carrion Gorget | C+ | High after attributes |
-| Ring 1 | Bramble Loop | D+ | **First upgrade** |
-| Ring 2 | Dusk Spiral | C | Medium priority |
-
-## Current upgrade order
+## Active upgrade plan
 
 ### U001 — Replace Bramble Loop
 
-Status: **Searching**
-
-Initial target:
-
-- 55–60+ maximum Life
-- 25%+ fire resistance
-- 15%+ chaos resistance
-- Added physical or cold damage to attacks
-- Optional 10–20+ Intelligence
-
-Why first:
-
-- Caps fire resistance
-- Adds Life
-- Improves chaos resistance
-- Can create Intelligence flexibility
-- Does not currently remove an essential attribute source
-
-### U002 — Upgrade Torment Buckle
-
-Target:
-
-- Three charm slots
-- 90–110+ maximum Life
-- Approximately 40%+ fire resistance
-- Approximately 25%+ cold resistance
-- 15–25%+ chaos resistance preferred
-
-Do not pay a premium for Strength.
-
-### U003 — Passive attribute rebalance
-
-Evaluate only after the ring candidate is selected. Reassign the minimum number of flexible Strength nodes needed to create a safe Intelligence margin.
+**Status: Completed** — replaced by `Golem Knot`.
 
 ### U004 — Upgrade Carrion Gorget
 
-Locked behind the attribute review. Preserve Spirit, fire resistance, cold resistance and enough Intelligence.
+**Status: Active search**
 
-### U005 — Upgrade Dusk Spiral
+Current amulet provides:
 
-Target:
+- Allocates Serrated Edges
+- 48 total Spirit (11 implicit + 37 explicit)
+- +14 Intelligence
+- +34% Fire Resistance
+- +30% Cold Resistance
+- +26 maximum Life
+- 28% increased Evasion Rating
 
-- 55–70+ maximum Life
-- 35–40%+ lightning resistance
-- Additional elemental resistance
-- Added physical or cold attack damage
-- Intelligence if still needed
+Target profile discussed on 2026-08-08:
 
-### U006 — Upgrade Brood Nails
+- Allocates Serrated Edges
+- ~50 Spirit
+- +2 to Level of All Projectile Skills
+- strong Critical Damage Bonus
+- +15% or better to all Elemental Resistances
+- useful Energy Shield / global Armour-Evasion-ES scaling
+- enough Intelligence elsewhere to keep the build legal
 
-Target:
+The pictured reference amulet also had 44% increased maximum Energy Shield, +50 Spirit, 25% increased global Armour/Evasion/ES, 34% increased Critical Damage Bonus, +2 projectile skill levels and +15% all elemental resistances.
 
-- 60+ maximum Life
-- Strong evasion
-- Preserve cold resistance
-- Add useful fire or lightning resistance
-- Added physical/cold attack damage or attack speed
+### U002 — Upgrade Torment Buckle
 
-### U007 — Upgrade Storm Goad
+Still a strong defensive follow-up, especially for more Life/Chaos resistance while retaining three charm slots.
 
-Only after enough Intelligence has been moved elsewhere.
+### U003 — Passive attribute rebalance
 
-Target:
+Do **not** make further attribute changes blindly. The latest export has 58 Str / 191 Dex / 117 Int; exact passive-node changes should be verified before the next respec. Intelligence is still the limiting attribute.
 
-- 35% movement speed
-- Required Dexterity
-- Enough Intelligence after other changes
-- 60+ maximum Life
-- Elemental resistance
-- Strong evasion or evasion/ES
+## Validation process
 
-### U008 — Bow evaluation
-
-Long-term only. Every candidate must be imported into PoB and compared against:
-
-- +2 projectile skill levels
-- Additional-arrow mechanics
-- +28 Dexterity
-- Attack speed
-- Total damage contribution
-
-## Validation process for purchases
-
-Before buying an item, record:
-
-- Listing URL and price
-- Item text
-- Life delta
-- Energy Shield delta
-- Evasion delta
-- DPS delta
-- Strength, Dexterity and Intelligence delta
-- Fire, cold, lightning and chaos resistance delta
-- Spirit delta
-- Lost utility or mechanics
-
-No item is considered an upgrade until it is imported into PoB and passes these checks.
+Before buying an item, record listing URL, price and item text, import it into PoB, and compare Life, ES, evasion, DPS, Strength/Dexterity/Intelligence, elemental/chaos resistances, Spirit and lost utility. No item is considered an upgrade until it passes these checks.
