@@ -1,12 +1,14 @@
 # Attributes and Resistances
 
+Snapshot date: **2026-08-08**
+
 ## Current attribute budget
 
 | Attribute | Current | Required | Spare |
 |---|---:|---:|---:|
-| Strength | 78 | 45 | +33 |
-| Dexterity | 171 | 163 | +8 |
-| Intelligence | 117 | 115 | +2 |
+| Strength | 58 | 45 | +13 |
+| Dexterity | 191 | 163 | +28 |
+| Intelligence | 117 | 115 | **+2** |
 
 ## Approximate gear-supplied attributes
 
@@ -21,39 +23,43 @@
 
 ## Dependency conclusions
 
-- Dexterity is primarily anchored by the bow and boots.
-- Intelligence is distributed across boots, helmet, amulet and Dusk Spiral.
-- Strength has substantial excess, mainly from the belt and passive choices.
-- Boots are the hardest slot to replace because they carry both Dexterity and Intelligence.
-- The bow cannot lose its Dexterity without compensation elsewhere.
+- Intelligence remains the tightest requirement at only +2 spare.
+- Dexterity now has a healthy +28 margin.
+- Strength is still legal but only +13 above requirement, so further Strength reductions should be deliberate.
+- Boots remain the hardest slot to replace because they carry both Dexterity and Intelligence.
+- The current Carrion Gorget contributes +14 Intelligence; replacing it with a no-Intelligence amulet would leave the build short unless Intelligence is added elsewhere or passives are changed.
 
-## Current resistance budget
+## Current resistance state
 
-Approximate equipment contribution:
+| Resistance | Capped value | Overcap / current margin |
+|---|---:|---:|
+| Fire | 75% | +6 |
+| Cold | 75% | +15 |
+| Lightning | 75% | +12 |
+| Chaos | 21% | Target 35–50% |
+
+## Relevant item contributions
 
 | Slot | Fire | Cold | Lightning | Chaos |
 |---|---:|---:|---:|---:|
-| Gloves | — | 46% | 13% | — |
-| Belt | 43% | 26% | — | — |
-| Helmet | 34% | — | 37% | — |
-| Amulet | 34% | 30% | — | — |
-| Dusk Spiral | 8% | 8% | 40% | — |
-| Bramble Loop | — | — | — | 17% |
-| Body Armour | — | — | 40% | — |
+| Golem Knot | +7% | +7% | +7% | +21% |
+| Gloves | — | +46% | +13% | — |
+| Belt | +43% | +26% | — | — |
+| Helmet | +34% | — | +37% | — |
+| Amulet | +34% | +30% | — | — |
+| Dusk Spiral | +8% | +8% | +40% | — |
+| Body Armour | — | — | +40% | — |
 
-Approximate totals from items:
-
-- Fire: 119%
-- Cold: 110%
-- Lightning: 130%
-- Chaos: 17%
+The table above tracks explicit/implicit item contributions relevant to gearing. PoB's final capped/overcap values are authoritative for the combined result.
 
 ## Upgrade rules
 
 Preferred post-upgrade margins:
 
-- Fire, cold and lightning: capped with 15–25% overcap
+- Fire, cold and lightning: capped with 15–25% overcap where practical
 - Chaos: at least 35%, then work toward 50%+
 - Dexterity: at least 10 points over requirement
 - Intelligence: at least 10–15 points over requirement
-- Strength: at least 10 points over requirement where practical
+- Strength: at least 10 points over requirement
+
+For the next amulet, do not evaluate resistance rolls in isolation: Carrion Gorget currently supplies 34% fire + 30% cold and +14 Intelligence, so those losses must be covered elsewhere.
