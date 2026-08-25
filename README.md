@@ -1,6 +1,6 @@
 # Whisperflyte Build Tracker
 
-Personal optimization journal for **Whisperflyte**, a level 94 Deadeye in the Runes of Aldur league.
+Personal optimization journal for **Whisperflyte**, a level 95 Deadeye in the Runes of Aldur league.
 
 ## Character links
 
@@ -8,13 +8,16 @@ Personal optimization journal for **Whisperflyte**, a level 94 Deadeye in the Ru
 
 ## Current snapshot
 
-PoB snapshot: **2026-08-08**
+PoB snapshot: **2026-08-24**
 
 | Metric | Current | Near-term target |
 |---|---:|---:|
-| Life | 1,768 | 1,850–2,000 |
+| Life | 1,781 | 1,850–2,000 |
 | Energy Shield | 1,129 | Maintain 1,100+ |
-| Evasion | 17,427 | Maintain 17,000+ |
+| Evasion | 14,327 | Rebuild toward 17,000+ |
+| Evade Chance | 60% | Improve without sacrificing core damage |
+| Deflection Rating | 16,046 | Maintain strong deflection |
+| Deflect Chance | 72% | Strong |
 | Fire Resistance | 75% (+6 overcap) | 15%+ overcap |
 | Cold Resistance | 75% (+15 overcap) | 15%+ overcap |
 | Lightning Resistance | 75% (+12 overcap) | 15%+ overcap |
@@ -22,20 +25,23 @@ PoB snapshot: **2026-08-08**
 | Strength | 58 / 45 required | +10 margin minimum |
 | Dexterity | 191 / 163 required | Healthy margin |
 | Intelligence | 117 / 115 required | **Only +2 margin** |
+| Mana | 822 | — |
+| Mana Regeneration | 60.8/sec | Sustain normal attacks without leaning on flask |
 | Spirit | 148 / 33 unreserved | Preserve current skills |
-| Combined PoB DPS | ~39,220 | Track after each upgrade |
+| Total EHP | ~23,895 | Improve through Life/Chaos/Evasion |
+| Combined PoB DPS | Unavailable in this export | Recheck with main damage skill selected |
 
 ## Current objective
 
-1. **Ring upgrade complete:** `Golem Knot` replaced `Bramble Loop`.
-2. Find a high-impact **Carrion Gorget amulet replacement** while preserving Spirit, elemental resistances and Intelligence requirements.
-3. Improve Chaos resistance toward 35–50%.
-4. Improve Life toward 1,850–2,000 without giving up the current evasion/ES floor.
-5. Re-evaluate the belt and remaining jewellery after the amulet decision.
+1. Keep the `Golem Knot` ring and current mana-leech setup.
+2. Evaluate the new `Rapture Creed` Sapphire jewel as a mana-sustain stopgap.
+3. Find a high-impact **Carrion Gorget amulet replacement** while preserving Spirit, elemental resistances and Intelligence requirements.
+4. Improve Chaos resistance toward 35–50%.
+5. Recover some of the lost evasion if it can be done efficiently.
 
 ## Currency
 
-User-reported balance is approximately **20 Divine Orbs** as of 2026-08-08; exact balance and Exalted count are not confirmed.
+User-reported balance is approximately **20 Divine Orbs**; exact current balance and Exalted count are not confirmed.
 
 ## Repository map
 
@@ -57,4 +63,4 @@ The repository is the source of truth for our optimization work. After a meaning
 
 ## Operating rule
 
-No item is considered an upgrade until it has been imported into PoB and checked for Life, Energy Shield, evasion, DPS, attributes, resistances, Spirit and lost mechanics.
+No item is considered an upgrade until it has been imported into PoB and checked for Life, Energy Shield, evasion, DPS, attributes, resistances, Spirit, mana sustain and lost mechanics.
